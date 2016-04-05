@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2016-04-05 Tue 11:31 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>My first post</title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Gonzalo Peraza" />
+<link rel='stylesheet' href='../worg.css' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<a href="../index.html"> HOME </a>
+|
+<a href="../blog.html"> BLOG </a>
+ |
+<a href="../teaching.html"> TEACHING </a>
+|
+<a href="../research.html"> RESEARCH </a>
+|
+<a href="../about.html"> ABOUT ME </a>
+|
+<a href="archive.html"> ARCHIVE </a>
+</div>
+<div id="content">
+<h1 class="title">My first post
+<br>
+<span class="subtitle">Posted: <span class="timestamp-wrapper"><span class="timestamp">04 Apr 2016</span></span> (<i>Last edited: 05 Apr 2016 10:32</i> )</span>
+</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline1">First Post&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag">mytag</span></span></a>
+<ul>
+<li><a href="#orgheadline2">A code sample</a></li>
+<li><a href="#orgheadline3">An equation</a>
+<ul>
+<li><a href="#orgheadline4">This is level 3 heading</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgheadline5"><span class="todo TODO">TODO</span> This is a todo.</a></li>
+<li><a href="#orgheadline6"><span class="done DONE">DONE</span> This is done.</a></li>
+<li><a href="#orgheadline7">a verse</a></li>
+<li><a href="#orgheadline8">A quote</a></li>
+<li><a href="#orgheadline9">A headline link</a></li>
+<li><a href="#orgheadline10">A headline link (not)</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1">First Post&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag">mytag</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+Yahooo, a first post.<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+</p>
+
+<p>
+An inline footnote <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+</p>
+</div>
+<div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2">A code sample</h3>
+<div class="outline-text-3" id="text-orgheadline2">
+<div class="org-src-container">
+
+<pre class="src src-python"><span class="org-keyword">print</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"Hello world"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Other code
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">use-package</span> <span class="org-constant">htmlize</span>
+  <span class="org-builtin">:ensure</span> t<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>add-to-list 'auto-mode-alist '<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"\\.org\\'"</span> . org-mode<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>global-set-key <span class="org-string">"\C-cl"</span> 'org-store-link<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>global-set-key <span class="org-string">"\C-ca"</span> 'org-agenda<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-comment-delimiter">;; </span><span class="org-comment">(global-font-lock-mode 1)  Not needed in recent emacsen</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3">An equation</h3>
+<div class="outline-text-3" id="text-orgheadline3">
+<p>
+\[
+x= \sqrt{y^{2}}
+\]
+</p>
+</div>
+<div id="outline-container-orgheadline4" class="outline-4">
+<h4 id="orgheadline4">This is level 3 heading</h4>
+<div class="outline-text-4" id="text-orgheadline4">
+<p>
+Here I put a footnote <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5"><span class="todo TODO">TODO</span> This is a todo.</h2>
+</div>
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6"><span class="done DONE">DONE</span> This is done.</h2>
+</div>
+
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7">a verse</h2>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8">A quote</h2>
+<div class="outline-text-2" id="text-orgheadline8">
+<blockquote>
+<p>
+This is a quote. A very long long long long long long long long long
+long long long.  A very long long long long long long long long long
+long long long.
+</p>
+
+<p>
+&#x2014;Me again.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9"><a href="https://google.com/">A headline link</a></h2>
+<div class="outline-text-2" id="text-orgheadline9">
+<p>
+ddadsa
+dadas
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10">A headline link (not)</h2>
+<div class="outline-text-2" id="text-orgheadline10">
+<p>
+dadsadsa
+dadsadsa
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+This is another footnote.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara">An inline footnote.</div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+This is the footnote.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Gonzalo Peraza</p>
+<p class="email">Email: <a href="mailto:ggperaza@gmail.com">ggperaza@gmail.com</a></p>
+<p class="date">Created: 2016-04-05 Tue 11:31</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.4)</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>
