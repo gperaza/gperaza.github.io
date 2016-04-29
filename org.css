@@ -89,6 +89,12 @@ h1,h2,h3,h4,h5,h6 {
     font-family: Droid Serif,serif
 }
 
+h2 a {
+    color: #a5573e;
+    line-height: 1.6em;
+    font-family: Droid Serif,serif
+}
+
 h4,h5,h6 {
     font-size: 1em;
 }
@@ -200,8 +206,7 @@ kbd {
 }
 
 .timestamp {
-    /* color: #bebebe; */
-    color: orange;
+    color: black;
 }
 
 .timestamp-kwd {
@@ -367,6 +372,17 @@ pre span.org-sh-quoted-exec              {color:#FF1493;}
 
 .creator {
     display:block;
+}
+
+.dates {
+    color: gray;
+    line-height: 0;
+    font-weight: bold;
+
+}
+
+drawer .timestamp {
+    color: gray;
 }
 
 @media (min-width:1025px) {
