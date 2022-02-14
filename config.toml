@@ -1,7 +1,8 @@
-baseURL = 'http://gonzalo-peraza.com/'
+baseURL = 'https://gperaza.github.io/'
 languageCode = 'en-us'
 title = 'Gonzalo G. Peraza Mues'
 theme = 'console'
+publishDir = 'docs'
 
 [markup.goldmark.renderer]
   unsafe = true
