@@ -1,0 +1,31 @@
+baseURL = 'http://gonzalo-peraza.com/'
+languageCode = 'en-us'
+title = 'Gonzalo G. Peraza Mues'
+theme = 'console'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting = true
+
+  # Set the animation style -- https://animate.style/
+  # To disable animations, please remove or comment animationStyle parameter
+  # animateStyle = "animated zoomIn fast"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
+
+  [[params.navlinks]]
+  name = "projects/"
+  url = "projects/"
+
+  [[params.navlinks]]
+  name = "publications/"
+  url = "https://scholar.google.com/citations?user=nguMmzcAAAAJ&hl=en/"
+
+  [[params.navlinks]]
+  name = "notes/"
+  url = "notes/"

@@ -1,0 +1,9 @@
+[submodule "themes/astatine"]
+	path = themes/astatine
+	url = git@github.com:hugcis/hugo-astatine-theme.git
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = git@github.com:monkeyWzr/hugo-theme-cactus.git
+[submodule "themes/console"]
+	path = themes/console
+	url = git@github.com:mrmierzejewski/hugo-theme-console.git

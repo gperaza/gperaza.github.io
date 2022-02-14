@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<h1>About</h1>
+
+<img style='width:150px;' src="portrait.png" alt="Gonzalo Peraza" align="left">
+
+<p>
+  I am a postdoctoral researcher at <a href=https://tec.mx/> Tecnológico de Monterrey</a>, part of the SOI-STEM research group at the <a href=https://tec.mx/en/ife>Institute for the Future of Education</a> (IFE). My current research efforts lie in the fields of city science, complex systems, education and their intersection. I've also worked in data science, granular matter and statistical physics.
+</p>
+
+<p>
+  Soy investigador posdoctoral en el <a href=https://tec.mx/> Tecnológico de Monterrey</a>, parte del grupo de investigación SOI-STEM del <a href=https://tec.mx/en/ife>Institute for the Future of Education</a> (IFE). Mis esfuerzos de investigación actuales se encuentran en los campos de la ciencia de la ciudad, sistemas complejos, educación y la intersección entre estos. También he trabajado en ciencia de datos, materia granular y física estadística.
+</p>
+
+<br/>
+
+<h1>Posts</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/posts" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <p>
+                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>
+    {{ end }}
+{{ end }}
+</div>
+
+<h1>Projects</h1>
+
+<div class="image-grid">
+{{ with .Site.GetPage "/photos" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
+        <a href="{{ .Permalink }}" title="{{ .Title }}">
+        {{ $image := .Page.Resources.GetMatch .Params.image }}
+        {{ with $image }}
+            {{ $thumb := .Resize "400x" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+        {{end}}
+        </a>
+    {{ end }}
+{{ end }}
+</div>
+
+<h1>Publications</h1>
+
+For list of publications see my Google Scholar <a href='https://scholar.google.com/citations?user=nguMmzcAAAAJ&hl=en'>profile</a>.
+{{ end }}
