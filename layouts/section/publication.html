@@ -9,6 +9,9 @@
             <p>
               <div class="date">{{ .Date.Format "Jan. 2, 2006" }}</div>
               <h2><a href="https://doi.org/{{ .Params.doi }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+              <div>
+                in {{.Params.Publication | markdownify}}
+              </div>
               <div class="authors" style="padding-bottom: 0.5em; padding_top: 0.5em;"> |
                 {{ range .Params.authors}}
                 {{if in . "Peraza"}}

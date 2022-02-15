@@ -47,6 +47,9 @@ Also see my Google Scholar <a href="https://scholar.google.com/citations?user=ng
     <p>
       <div class="date">{{ .Date.Format "Jan. 2, 2006" }}</div>
       <h2><a href="https://doi.org/{{ .Params.doi }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+      <div>
+        in {{.Params.Publication | markdownify}}
+      </div>
       <div> |
         {{ range .Params.authors}}
         {{if in . "Peraza"}}
