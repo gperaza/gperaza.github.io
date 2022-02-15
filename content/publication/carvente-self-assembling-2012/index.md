@@ -1,7 +1,6 @@
 ---
 title: Self-Assembling of Non-Brownian Magnetized Spheres
 date: '2012-02-01'
-draft: true
 publishDate: '2022-02-14T21:48:32.740425Z'
 authors:
 - O. Carvente

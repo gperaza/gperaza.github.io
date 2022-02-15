@@ -2,7 +2,6 @@
 title: 'Precursor Nuclei on the Bottom of a Vibrating Container: The Onset of Granular
   Self-Assembly Crystallization'
 date: '2022-02-01'
-draft: true
 publishDate: '2022-02-14T21:48:32.807836Z'
 authors:
 - H. A. Pacheco-Martinez

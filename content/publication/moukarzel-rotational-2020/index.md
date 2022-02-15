@@ -1,7 +1,6 @@
 ---
 title: Rotational Transport via Spontaneous Symmetry Breaking in Vibrated Disk Packings
 date: '2020-07-01'
-draft: true
 publishDate: '2022-02-14T21:48:32.774549Z'
 authors:
 - Cristian Fernando Moukarzel

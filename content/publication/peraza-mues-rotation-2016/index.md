@@ -1,7 +1,6 @@
 ---
 title: Rotation in a Gravitational Billiard
 date: '2016-09-01'
-draft: true
 publishDate: '2022-02-14T21:48:32.842252Z'
 authors:
 - G. G. Peraza-Mues

@@ -1,7 +1,6 @@
 ---
 title: Sustained Rotation in a Vibrated Disk with Asymmetric Supports
 date: '2019-10-01'
-draft: true
 publishDate: '2022-02-14T21:48:32.876642Z'
 authors:
 - Gonzalo G. Peraza-Mues
