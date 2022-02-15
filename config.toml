@@ -25,7 +25,7 @@ publishDir = 'docs'
 
   [[params.navlinks]]
   name = "publications/"
-  url = "https://scholar.google.com/citations?user=nguMmzcAAAAJ&hl=en/"
+  url = "publication/"
 
   [[params.navlinks]]
   name = "notes/"

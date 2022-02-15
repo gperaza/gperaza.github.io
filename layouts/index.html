@@ -32,21 +32,34 @@
 
 <h1>Projects</h1>
 
-<div class="image-grid">
-{{ with .Site.GetPage "/photos" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
-        <a href="{{ .Permalink }}" title="{{ .Title }}">
-        {{ $image := .Page.Resources.GetMatch .Params.image }}
-        {{ with $image }}
-            {{ $thumb := .Resize "400x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-        {{end}}
-        </a>
-    {{ end }}
-{{ end }}
-</div>
+<div> </div>
 
 <h1>Publications</h1>
 
-For list of publications see my Google Scholar <a href='https://scholar.google.com/citations?user=nguMmzcAAAAJ&hl=en'>profile</a>.
+<a href="/publication">Here</a> for complete list with abstracts.
+Also see my Google Scholar <a href="https://scholar.google.com/citations?user=nguMmzcAAAAJ&hl=en">profile</a>.
+
+<div class="posts-list">
+  {{ with .Site.GetPage "/publication" }}
+
+  {{ range sort .Data.Pages "Date" "desc" }}
+  <div class="post">
+    <p>
+      <div class="date">{{ .Date.Format "Jan. 2, 2006" }}</div>
+      <h2><a href="https://doi.org/{{ .Params.doi }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+      <div> |
+        {{ range .Params.authors}}
+        {{if in . "Peraza"}}
+        <b>{{ . }}</b>
+        {{ else }}
+        <em>{{ . }}</em>
+        {{ end }}
+        |
+        {{ end }}
+      </div>
+    </p>
+  </div>
+  {{ end }}
+</div>
+{{end}}
 {{ end }}
