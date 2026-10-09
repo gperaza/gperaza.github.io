@@ -7,6 +7,7 @@ project:
   output-dir: _site
   resources:
     - assets/gonzalo-peraza.vcf   # contact card behind the home page's "Save contact" button
+    - assets/img/merida-streets.svg   # footer street map (scripts/merida_streets.py)
 
 website:
   title: "Gonzalo Peraza"
@@ -46,7 +47,7 @@ website:
     border: true
     left: "© 2026 Gonzalo Peraza"
     center: "[About](/index.qmd) · [Blog](/blog.qmd) · [CV](/cv.qmd)"
-    right: "Built with [Quarto](https://quarto.org)"
+    right: "Built with [Quarto](https://quarto.org) · Map: Mérida, © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors"
 
 format:
   html:

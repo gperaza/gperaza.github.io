@@ -107,8 +107,22 @@ figcaption, .figure-caption, .margin-caption, .aside {
 div.quarto-post { border-color: rgba($body-color, 0.12); }
 .listing-title, .quarto-post .listing-title { font-weight: 600; }
 
-// Footer small.
-.nav-footer { font-size: 0.82rem; }
+// Footer small, over a faint strip of Mérida's street grid (same map as the
+// business card; drawn by scripts/merida_streets.py, credited in the footer).
+.nav-footer {
+  font-size: 0.82rem;
+  position: relative;
+  padding-top: 6.5rem;
+}
+.nav-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/img/merida-streets.svg") center / auto 100% no-repeat;  // fades out at both ends
+  pointer-events: none;
+}
+.nav-footer > * { position: relative; }
+body.quarto-dark .nav-footer::before { filter: invert(1); }  // light lines on dark
 
 // Slightly relaxed underline offset for links.
 a { text-underline-offset: 0.12em; }
