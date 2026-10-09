@@ -24,7 +24,7 @@ about:
       href: blog.qmd
 ---
 
-I am a Research Professor at Tecnológico de Monterrey, affiliated with the Center for the Future of Cities and the School of Government and Public Transformation.
+I am a Research Professor at Tecnológico de Monterrey, affiliated with the [Center for the Future of Cities](https://futurociudades.tec.mx/es/semblanza/gonzalo-gaudencio-peraza) and the [School of Government and Public Transformation](https://egobiernoytp.tec.mx/es/sobre-egob/facultad-investigadores/perfil-asociados/gonzalo-peraza).
 I study cities as complex systems, drawing on statistical physics, urban modeling, and geospatial data science.
 I want to understand how cities work, meaning the regularities and mechanisms behind their form and dynamics, as a path toward understanding social systems more broadly.
 I also try to put that understanding to use, turning it into evidence for planning and public policy.
