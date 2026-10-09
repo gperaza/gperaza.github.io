@@ -1,0 +1,86 @@
+---
+title: "Curriculum Vitae"
+description: "Academic CV of Gonzalo G. Peraza Mues."
+date: today
+date-format: "MMMM YYYY"
+# The CV content lives in _cv/cv.yml (entries) and references.bib (publications).
+# This page renders it twice: as this web page and as cv.pdf (Typst).
+metadata-files:
+  - _cv/cv.yml
+shortcodes:
+  - _cv/cv.lua
+language:
+  title-block-published: "Updated"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    format-links: false
+  typst:
+    papersize: us-letter
+    template-partials:
+      - _cv/typst-template.typ
+      - _cv/typst-show.typ
+---
+
+::: {.content-visible when-format="html"}
+[Download PDF](cv.pdf){.btn .btn-outline-primary role="button" download="Gonzalo-Peraza-CV.pdf"}
+:::
+
+## Experience
+
+{{< cv experience >}}
+
+## Education
+
+{{< cv education >}}
+
+## Publications
+
+### Journal articles
+
+{{< cv-pubs references.bib types="article-journal" me="Peraza" >}}
+
+### Reports
+
+{{< cv-pubs references.bib types="report" me="Peraza" >}}
+
+## Research projects
+
+{{< cv projects >}}
+
+## Teaching
+
+{{< cv teaching >}}
+
+## Student supervision
+
+{{< cv supervision >}}
+
+## Conference presentations
+
+{{< cv talks >}}
+
+## Invited talks and outreach
+
+{{< cv outreach >}}
+
+## Service
+
+{{< cv service >}}
+
+## Honors and awards
+
+{{< cv awards >}}
+
+## Training and certifications
+
+{{< cv training >}}
+
+## Software and data
+
+{{< cv software >}}
+
+## Media
+
+{{< cv media >}}

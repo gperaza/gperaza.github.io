@@ -1,0 +1,51 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Brand definition — single source of truth for colors + fonts.
+# Auto-discovered by Quarto (must be named _brand.yml at the project root).
+# Greyscale palette + NO web fonts: type falls back to the browser's default
+# font (the Low Tech Magazine approach — zero font downloads, lowest energy).
+# ─────────────────────────────────────────────────────────────────────────────
+meta:
+  name: Gonzalo Peraza
+  link: https://gonzalo-peraza.com
+
+color:
+  palette:
+    paper: "#f4f3f1"        # soft neutral off-white — light background
+    paper-dark: "#151515"   # near-black — dark background
+    ink: "#141414"          # near-black — light-mode text
+    mist: "#e9e9e9"         # light grey — dark-mode text
+    grey: "#2a2a2a"         # dark grey — accent / links (light)
+    grey-light: "#d8d8d8"   # light grey — accent / links (dark)
+    faded: "#6d6d6d"        # secondary text (light)
+    faded-dark: "#9a9a9a"   # secondary text (dark)
+    rule: "#e3e1de"         # hairline rules / borders
+  background:
+    light: paper
+    dark: paper-dark
+  foreground:
+    light: ink
+    dark: mist
+  primary:
+    light: grey
+    dark: grey-light
+  secondary:
+    light: faded
+    dark: faded-dark
+
+typography:
+  # No `fonts:` list → nothing is downloaded. Generic families resolve to the
+  # reader's own default browser fonts.
+  base:
+    family: serif            # browser default serif (e.g. Times / the OS serif)
+    size: 19px
+    line-height: 1.6
+  headings:
+    # No `family:` — headings inherit the base serif. (An explicit generic
+    # "serif" also reaches the Typst CV, where it is not a valid font name.)
+    weight: 600
+    line-height: 1.15
+  monospace:
+    family: monospace        # browser default monospace
+    size: 0.85em
+  link:
+    color: primary

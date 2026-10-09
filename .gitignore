@@ -1,0 +1,11 @@
+# Quarto build output & cache
+/_site/
+/.quarto/
+
+# Rendered sidecar files (if any land next to sources)
+/*_files/
+
+# macOS
+.DS_Store
+
+**/*.quarto_ipynb

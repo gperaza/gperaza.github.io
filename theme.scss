@@ -1,0 +1,197 @@
+/*-- scss:defaults --*/
+// Colors + fonts come from _brand.yml (layered underneath this file).
+// Only editorial refinements that brand.yml can't express live here.
+$link-decoration: underline;
+$toc-font-size: 0.72rem;
+$code-block-border-left: false;
+$headings-font-weight: 600;
+
+/*-- scss:rules --*/
+// $body-color, $body-bg, $primary and $font-family-monospace / $font-family-base
+// are guaranteed Bootstrap variables that _brand.yml drives (and that swap between
+// the light and dark theme builds), so the rules below adapt to both modes.
+
+// Print-magazine numerals/ligatures + crisp rendering.
+body {
+  font-feature-settings: "onum" 1, "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .title { font-weight: 600; }
+
+// Uniform look: metadata, tags, and captions use the SAME default font as the
+// body — no monospace, no uppercase, no extra tracking. Just a slightly smaller,
+// muted size to keep a gentle hierarchy. `text-transform: none` also overrides
+// Quarto's default uppercasing of the title-block meta headings.
+.quarto-title-meta-heading,
+.quarto-title-meta-contents,
+.listing-date, .listing-category, .listing-author,
+.quarto-categories .quarto-category,
+.quarto-category {
+  font-size: 0.85rem;
+  text-transform: none !important;   // override Quarto's default uppercasing
+  letter-spacing: normal;
+}
+.quarto-title-meta-heading { color: rgba($body-color, 0.6); }
+
+// Navbar links: default browser font, normal case (not uppercase).
+.navbar-nav .nav-link { font-size: 0.95rem; letter-spacing: normal; }
+
+// Category tags as quiet chips with a hairline (default font, normal case).
+.quarto-categories .quarto-category,
+.quarto-category {
+  border: 1px solid rgba($body-color, 0.22);
+  border-radius: 2px;
+  padding: 0.08em 0.5em;
+  opacity: 1;
+}
+
+// ── Masthead header sits on the paper (no colored bar).
+.navbar {
+  background-color: $body-bg !important;
+  border-bottom: 1px solid rgba($body-color, 0.14);
+  box-shadow: none;
+}
+.navbar-brand {
+  font-family: $font-family-base;   // serif masthead
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+}
+.navbar .navbar-brand,
+.navbar .quarto-navigation-tool,
+.navbar .dropdown-item {
+  color: $body-color !important;
+}
+.navbar .nav-link { color: rgba($body-color, 0.62) !important; }  // greyscale: muted inactive
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar .navbar-brand:hover,
+.navbar .quarto-navigation-tool:hover {
+  color: $body-color !important;   // hover/active darkens to full ink
+}
+
+// Hairline rules.
+hr { border: 0; border-top: 1px solid rgba($body-color, 0.16); margin: 2.5rem 0; }
+
+// Refined blockquotes — quiet grey rule.
+blockquote {
+  font-style: italic;
+  border-left: 3px solid rgba($body-color, 0.28);
+  color: rgba($body-color, 0.85);
+  padding-left: 1rem;
+}
+
+// ── Opt-in drop cap in ink (add `dropcap` to a page/post).
+.dropcap > p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.78;
+  padding: 0.05em 0.09em 0 0;
+  font-weight: 600;
+  color: $body-color;
+}
+
+// ── Opt-in dithered / duotone image (add `.dither` to an image or wrapper).
+.dither img, img.dither { filter: grayscale(1) contrast(1.12) brightness(1.02); }
+
+// Muted captions (same font as body).
+figcaption, .figure-caption, .margin-caption, .aside {
+  color: rgba($body-color, 0.6);
+  font-size: 0.82rem;
+}
+
+// Listing cards: quiet borders, serif titles.
+.quarto-listing .card,
+div.quarto-post { border-color: rgba($body-color, 0.12); }
+.listing-title, .quarto-post .listing-title { font-weight: 600; }
+
+// Footer small.
+.nav-footer { font-size: 0.82rem; }
+
+// Slightly relaxed underline offset for links.
+a { text-underline-offset: 0.12em; }
+
+// Neutralize the default note-callout accent so it doesn't fight the palette.
+.callout-note { border-left-color: rgba($body-color, 0.35) !important; }
+
+// ── CV (cv.qmd): classic vita rows — date column + entry body. The markup
+// comes from the shortcodes in _cv/cv.lua.
+.cv-entry {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  column-gap: 1.25rem;
+  margin-bottom: 0.95rem;
+  line-height: 1.45;
+}
+.cv-date {
+  color: rgba($body-color, 0.6);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 0.92em;
+  padding-top: 0.08em;
+}
+.cv-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cv-location {
+  color: rgba($body-color, 0.6);
+  font-style: italic;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.cv-body { min-width: 0; }                     // let long DOIs wrap instead of widening the grid
+.cv-body a { overflow-wrap: anywhere; }
+.cv-desc { color: rgba($body-color, 0.72); }
+.cv-body ul { margin: 0.25rem 0 0; padding-left: 1.1rem; }
+.cv-body li { margin-bottom: 0.1rem; }
+#title-block-header + .btn, main > .btn { margin-bottom: 1rem; }
+
+@media (max-width: 575.98px) {
+  .cv-entry { grid-template-columns: 1fr; }
+  .cv-head { flex-wrap: wrap; gap: 0 0.75rem; }
+}
+
+// ── Home page: "Recent news" in the right margin (index.qmd).
+.news {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  .news-title {
+    display: block;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba($body-color, 0.16);
+  }
+  ul { list-style: none; padding-left: 0; margin: 0.6rem 0 0; }
+  li { margin-bottom: 0.75rem; }
+  strong { font-weight: 600; color: rgba($body-color, 0.6); }
+}
+
+// Wide screens: bio and news side by side inside the about layout's content
+// column (a third column next to the photo). Narrower: news follows the bio.
+@media (min-width: 1200px) {
+  // The about block normally fills the 760px body column; let it use the screen
+  // width (capped), with a fixed photo column and a readable bio column.
+  #quarto-content > .quarto-about-trestles {
+    grid-column: screen-start-inset / screen-end-inset;
+    width: 100%;
+    max-width: 74rem;
+    justify-self: center;
+  }
+  .quarto-about-trestles .about-entity { flex: 0 0 19rem; max-width: 19rem; }
+  .quarto-about-trestles .about-contents { padding-left: 2.5rem; flex: 1 1 auto; }
+  .quarto-about-trestles .about-contents > main.content {
+    display: grid;
+    grid-template-columns: minmax(0, 34rem) 12rem;
+    column-gap: 2.5rem;
+    align-items: start;
+    > * { grid-column: 1; }
+    > .news { grid-column: 2; grid-row: 1 / span 20; margin-top: 0.4rem; }
+  }
+}
+@media (max-width: 1199.98px) {
+  .news { margin-top: 2.5rem; }
+}

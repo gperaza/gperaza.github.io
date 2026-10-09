@@ -1,0 +1,15 @@
+---
+title: "Software & Data"
+description: "Open-source code and data sets from my research."
+# Entries come from _cv/cv.yml, the same data as the CV.
+metadata-files:
+  - _cv/cv.yml
+shortcodes:
+  - _cv/cv.lua
+---
+
+My research code is on GitHub, under my [personal account](https://github.com/gperaza)
+and the [Center for the Future of Cities](https://github.com/CentroFuturoCiudades)
+organization. Data sets that accompany papers are archived on Zenodo.
+
+{{< cv software >}}

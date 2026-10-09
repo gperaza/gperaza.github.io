@@ -1,0 +1,24 @@
+---
+title: "Talks"
+description: "Conference presentations, invited talks, outreach, and media."
+toc: true
+# Entries come from _cv/cv.yml, the same data as the CV.
+metadata-files:
+  - _cv/cv.yml
+shortcodes:
+  - _cv/cv.lua
+---
+
+Talks are listed newest first. The same list appears in my [CV](cv.qmd).
+
+## Conference presentations
+
+{{< cv talks >}}
+
+## Invited talks and outreach
+
+{{< cv outreach >}}
+
+## Media
+
+{{< cv media >}}

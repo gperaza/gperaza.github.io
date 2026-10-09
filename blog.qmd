@@ -1,0 +1,15 @@
+---
+title: "Blog"
+description: "Notes, essays, and work in progress."
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: true
+---
+
+Occasional writing — research notes, ideas in progress, and the odd digression.
+Subscribe via [RSS](blog.xml).

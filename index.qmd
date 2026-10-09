@@ -1,0 +1,48 @@
+---
+title: "Gonzalo Peraza"
+subtitle: "Research Professor<br>Center for the Future of Cities / EGyTP<br>Tecnológico de Monterrey"
+pagetitle: "Gonzalo Peraza"
+about:
+  template: trestles
+  image: assets/img/profile.png
+  image-shape: rounded
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: "mailto:gonzalo.peraza@tec.mx"
+    - icon: mortarboard-fill
+      text: Scholar
+      href: "https://scholar.google.com/citations?user=nguMmzcAAAAJ"
+    - icon: github
+      text: GitHub
+      href: "https://github.com/gperaza"
+    - text: ORCID
+      href: "https://orcid.org/0000-0002-0871-2884"
+    - icon: rss
+      text: Blog
+      href: blog.qmd
+---
+
+I am a Research Professor at Tecnológico de Monterrey, affiliated with the Center for the Future of Cities and the School of Government and Public Transformation.
+I study cities as complex systems, drawing on statistical physics, urban modeling, and geospatial data science.
+I want to understand how cities work, meaning the regularities and mechanisms behind their form and dynamics, as a path toward understanding social systems more broadly.
+I also try to put that understanding to use, turning it into evidence for planning and public policy.
+
+My recent work covers urban expansion and the population loss of Mexican city centers, income segregation where data are scarce, and urban heat vulnerability, and I have built planning tools for Latin American cities with the Inter-American Development Bank.
+I came to cities from physics, with a PhD in Theoretical Physics from Cinvestav, and I teach graduate courses on data science for public policy.
+
+You can read more about my [research](research.qmd), browse my [publications](publications.qmd) and [talks](talks.qmd), or get in touch by [email](mailto:gonzalo.peraza@tec.mx).
+
+::: {.news}
+[Recent news]{.news-title}
+
+- **Oct 2026**\
+  Keynote at the [6th Congreso Internacional de Estudios sobre la Ciudad](https://6congresociudad.puec.unam.mx/pdf/programa.pdf) (PUEC-UNAM), Mérida.
+- **Jul 2026**\
+  ["Scaling and population loss in Mexican urban centres"](https://doi.org/10.1038/s41467-026-75780-5) published in _Nature Communications_.
+- **Oct 2025**\
+  Invited talk at [INEGI's Academic Advisory Council](https://www.inegi.org.mx/inegi/cca/sesiones.html) on population dynamics in 69 metropolitan areas ([slides](https://www.inegi.org.mx/contenidos/inegi/cca/2025/segunda_sesion/presentaciones/dinamicaspoblacion_itesm.pdf)).
+- **Nov 2024**\
+  Talk at [Data Day Monterrey](https://sg.com.mx/dataday/sessions/2024mty/sistema-informacion-urbano/) on Monterrey's urban expansion ([video](https://www.youtube.com/watch?v=zPlfwU96VNM)).
+:::

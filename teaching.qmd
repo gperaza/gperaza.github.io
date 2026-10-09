@@ -1,0 +1,39 @@
+---
+title: "Teaching"
+description: "Courses, mentoring, and teaching materials."
+toc: true
+# Courses and supervision come from _cv/cv.yml, the same data as the CV.
+metadata-files:
+  - _cv/cv.yml
+shortcodes:
+  - _cv/cv.lua
+---
+
+I teach graduate courses in data science, statistics, and data science for public
+policy at the School of Government and Public Transformation of Tecnológico de
+Monterrey. Before that, I taught undergraduate programming, mathematics, statistics,
+and machine learning at the Universidad Politécnica de Yucatán, where I also directed
+the Data Engineering program.
+
+## Courses
+
+{{< cv teaching >}}
+
+## Mentoring
+
+I advise master's theses and applied projects in data science, urban analytics, and
+public policy, and I serve on thesis committees. If you are a student interested in
+working on these topics, [get in touch](mailto:gonzalo.peraza@tec.mx) with a short note
+about your interests.
+
+{{< cv supervision >}}
+
+## Resources
+
+- [ISLR-Python-Labs](https://github.com/gperaza/ISLR-Python-Labs): Python versions of
+  the labs in *An Introduction to Statistical Learning*.
+- [ISL_labs_python](https://github.com/gperaza/ISL_labs_python): the labs of the
+  book's second edition, translated to Python.
+- [ap6001-data](https://github.com/CentroFuturoCiudades/ap6001-data): lightweight
+  extracts of INEGI surveys (ENIGH, ENOE) for the notebooks of my probability and
+  statistics course.

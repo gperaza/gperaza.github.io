@@ -1,0 +1,101 @@
+---
+title: "Research"
+description: "What I work on and why."
+toc: true
+bibliography: references.bib
+# Projects below come from _cv/cv.yml, the same data as the CV.
+metadata-files:
+  - _cv/cv.yml
+shortcodes:
+  - _cv/cv.lua
+---
+
+I study cities as complex systems. I want to understand how cities work, meaning the
+regularities and mechanisms behind their form and dynamics, as a path toward
+understanding social systems more broadly, and I try to turn that understanding into
+evidence and tools for planning and public policy. My work combines ideas from
+statistical physics with urban modeling, simulation, and geospatial data science, and
+most of it focuses on Mexico and Latin America.
+
+For the complete list of papers, see [publications](publications.qmd).
+
+## Themes
+
+### Urban growth and population dynamics
+
+Mexican cities have grown outward much faster than their populations, and their centers
+have emptied. Using multi-temporal population grids that we built for 69 metropolitan
+areas from four censuses (MexPop), we found that urban populations nearly doubled
+between 1990 and 2020 while central areas lost about 2.5 million residents
+[@peraza2026scaling]. I also work on models of urban expansion, from an open
+implementation of the SLEUTH cellular automaton to scenario-planning tools developed
+with the Inter-American Development Bank [@arends2024ursa].
+
+### Segregation and inequality
+
+Measuring segregation usually requires income data for small areas, which Mexico's
+census does not report. I developed a method that combines census and survey data
+through iterative proportional fitting to estimate small-area income distributions and
+compute segregation indices from them [@peraza2024income]. With colleagues, I have also
+studied how economic complexity and urban sprawl shape socio-spatial segregation across
+Mexican cities [@cruz2025interplay].
+
+### Mobility and synthetic populations
+
+Agent-based transport models need detailed synthetic populations of households and
+people. I build them for the models of Monterrey and Guadalajara that we develop with
+the University of Toronto (GTAModel/SOFIAA), using a population-synthesis method based
+on linear and quadratic programming that works with the aggregate data available in
+Mexico. Related work uses machine learning to impute informal workers in travel surveys
+[@de2025imputing].
+
+### Urban health and climate
+
+With the Global Observatory of Healthy and Sustainable Cities, I contribute software
+and analysis to global indicators of healthy and sustainable cities, including a global
+index of urban heat vulnerability [@turner2025development] and indicators of cycling
+access. Earlier, with the Inter-American Development Bank, I built tools to assess urban
+heat islands in Latin American cities.
+
+### From physics to cities
+
+Before working on cities, I studied self-organization in granular matter, including the
+spontaneous rotation of vibrated disk packings
+[@moukarzel2020rotational; @peraza2019sustained]. That training in statistical physics
+is where my approach to cities comes from.
+
+## Selected work
+
+- **Scaling and population loss in Mexican urban centres.** *Nature Communications*, 2026.
+  [[DOI](https://doi.org/10.1038/s41467-026-75780-5)] ·
+  [[Code & data](https://doi.org/10.5281/zenodo.20630381)]
+- **The interplay of economic complexity and urban sprawl in shaping socio-spatial
+  segregation in Mexico.** *Applied Geography*, 2025.
+  [[DOI](https://doi.org/10.1016/j.apgeog.2025.103690)]
+- **Development and validation of the Global Urban Heat Vulnerability Index (GUHVI).**
+  *Urban Climate*, 2025. [[DOI](https://doi.org/10.1016/j.uclim.2025.102716)]
+- **Income segregation analysis in limited-data contexts.** *Geographical Analysis*,
+  2024. [[DOI](https://doi.org/10.1111/gean.12367)] ·
+  [[Code](https://github.com/CentroFuturoCiudades/income-segregation)]
+- **URSA: A tool to guide urban planning using satellite data.** Inter-American
+  Development Bank, 2024. [[DOI](https://doi.org/10.18235/0013065)] ·
+  [[Code](https://github.com/EL-BID/URSA)]
+- **Rotational transport via spontaneous symmetry breaking in vibrated disk packings.**
+  *Physical Review Letters*, 2020. [[DOI](https://doi.org/10.1103/PhysRevLett.125.028001)]
+
+## Projects
+
+{{< cv projects >}}
+
+## Collaborators & funding
+
+I work with colleagues at the Center for the Future of Cities and the School of
+Government and Public Transformation of Tecnológico de Monterrey, and with the
+University of Toronto Transportation Research Institute, the Complexity Science Hub
+Vienna, the Global Observatory of Healthy and Sustainable Cities, and the Inter-American
+Development Bank. Partners in applied projects include Consejo Nuevo León, IMEPLAN
+(Guadalajara), IMPLAN Saltillo, and the Municipality of San Pedro Garza García.
+
+This work has been supported by Tecnológico de Monterrey's Challenge-Based Research
+program, the Inter-American Development Bank, Fundación FEMSA, and Mexico's National
+System of Researchers (SNII).

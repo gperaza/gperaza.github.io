@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Quarto website configuration.
+# Colors + fonts live in _brand.yml; editorial CSS lives in theme.scss.
+# ─────────────────────────────────────────────────────────────────────────────
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Gonzalo Peraza"
+  site-url: "https://gonzalo-peraza.com"
+  draft-mode: gone        # drafts (draft: true) are not rendered or published
+  description: "Academic homepage of Gonzalo Peraza, urban scientist and research professor at Tecnológico de Monterrey."
+  favicon: assets/img/favicon.svg
+  open-graph: true
+  navbar:
+    pinned: true
+    background: light
+    left:
+      - href: index.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: teaching.qmd
+        text: Teaching
+      - href: talks.qmd
+        text: Talks
+      - href: software.qmd
+        text: Software
+      - href: blog.qmd
+        text: Blog
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: github
+        href: "https://github.com/gperaza"
+        aria-label: GitHub
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS feed
+  page-footer:
+    border: true
+    left: "© 2026 Gonzalo Peraza"
+    center: "[About](/index.qmd) · [Blog](/blog.qmd) · [CV](/cv.qmd)"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    # Light/dark theme toggle: brand supplies the per-mode colors, theme.scss
+    # the shared editorial rules.
+    theme:
+      light:
+        - brand
+        - theme.scss
+      dark:
+        - brand
+        - theme.scss
+    page-layout: article
+    grid:
+      body-width: 760px        # tight, single-column editorial measure
+    toc: false                 # off by default for a clean read; enable per page
+    reference-location: margin # footnotes/refs as Tufte/WiP-style side notes
+    citation-location: margin
+    fig-cap-location: margin
+    link-external-newwindow: true
+    link-external-icon: false
+    citations-hover: true
+    footnotes-hover: true
+    smooth-scroll: true
+    anchor-sections: true
+    date-format: "MMMM D, YYYY"
+
+# Applies to every page unless overridden in a page's front matter.
+lang: en

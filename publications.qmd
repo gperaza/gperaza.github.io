@@ -1,0 +1,19 @@
+---
+title: "Publications"
+description: "Peer-reviewed articles and reports."
+# Generated from references.bib by the same shortcode as the CV: newest first,
+# my name in bold. Add a BibTeX entry there and it appears here and in the CV.
+shortcodes:
+  - _cv/cv.lua
+---
+
+See also my [Google Scholar profile](https://scholar.google.com/citations?user=nguMmzcAAAAJ)
+and [ORCID](https://orcid.org/0000-0002-0871-2884).
+
+## Journal articles
+
+{{< cv-pubs references.bib types="article-journal" me="Peraza" >}}
+
+## Reports
+
+{{< cv-pubs references.bib types="report" me="Peraza" >}}

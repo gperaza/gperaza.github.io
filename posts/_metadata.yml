@@ -1,0 +1,9 @@
+# Shared front matter for every blog post (Quarto merges this into each post).
+author: "Gonzalo Peraza"
+title-block-banner: false
+toc: false
+
+# Posts are prose-only, so no compute is needed to build them. To add executable
+# code later, set an engine and freeze results so CI doesn't need your toolchain:
+#   engine: jupyter      # or: knitr
+#   freeze: auto

@@ -1,0 +1,431 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# CV data — the single source for cv.qmd, which renders it to both the web
+# page (cv.html) and the PDF (cv.pdf). Publications come from references.bib.
+#
+# Each section is a list of entries, shown in the order written here.
+# Entry fields (all optional, all accept Markdown):
+#   date, title, location, description, details (a list of bullet points)
+# To add a section: add a list here, then `## Heading` + {{< cv name >}} in cv.qmd.
+# Quarto drops exact duplicate entries when it loads this file, so keep each entry distinct.
+# ─────────────────────────────────────────────────────────────────────────────
+cv:
+  name: Gonzalo G. Peraza Mues
+  tagline: Urban Scientist · Research Professor
+  contacts:
+    - "[gonzalo.peraza@tec.mx](mailto:gonzalo.peraza@tec.mx)"
+    - "[gonzalo-peraza.com](https://gonzalo-peraza.com)"
+    - "[ORCID 0000-0002-0871-2884](https://orcid.org/0000-0002-0871-2884)"
+    - "[Google Scholar](https://scholar.google.com/citations?user=nguMmzcAAAAJ)"
+    - "[GitHub](https://github.com/gperaza)"
+    - "[LinkedIn](https://www.linkedin.com/in/ggperaza/)"
+
+  experience:
+    - date: 2023–present
+      title: Research Professor
+      description: School of Government and Public Transformation, and Fellow of the Center for the Future of Cities, Tecnológico de Monterrey
+      location: Monterrey, Mexico
+    - date: 2023
+      title: Coordinator of Network Modeling and Spatial Data
+      description: Tecnológico de Monterrey
+      location: Monterrey, Mexico
+      details:
+        - Implementation of an agent-based transport simulator for the Monterrey Metropolitan Area.
+    - date: 2022
+      title: Postdoctoral Researcher
+      description: Institute for the Future of Education, with the Center for the Future of Cities, Tecnológico de Monterrey
+      location: Monterrey, Mexico
+    - date: 2021–2022
+      title: Coordinator of Network Modeling and Spatial Data
+      description: School of Government and Public Transformation, Tecnológico de Monterrey
+      location: Monterrey, Mexico
+    - date: 2018–2021
+      title: Director, Data Engineering Program
+      description: Universidad Politécnica de Yucatán
+      location: Yucatán, Mexico
+      details:
+        - Taught data science courses and led the design and updates of the program's curriculum.
+
+  education:
+    - date: 2018
+      title: PhD in Theoretical Physics
+      description: Centro de Investigación y de Estudios Avanzados del IPN (Cinvestav)
+      details:
+        - "Thesis: *Spontaneous rotation in vibrated disk packings*"
+    - date: 2012
+      title: MSc in Applied Physics
+      description: Centro de Investigación y de Estudios Avanzados del IPN (Cinvestav)
+    - date: 2010
+      title: Physics Engineering (BSc)
+      description: Universidad Autónoma de Yucatán, graduated with honors
+
+  projects:
+    - date: 2026–present
+      title: "SOFIAA Guadalajara: agent-based transportation model for the Guadalajara Metropolitan Area"
+      description: Center for the Future of Cities, Tecnológico de Monterrey, with IMEPLAN (GTAModel)
+      details:
+        - Synthetic population and processing of the 2023 origin–destination survey.
+    - date: 2026–present
+      title: Instrumentos y herramientas para la revitalización de un polígono en la zona central de Saltillo, Coahuila
+      description: Center for the Future of Cities, Tecnológico de Monterrey, for the Municipality of Saltillo (IMPLAN Saltillo)
+      details:
+        - Quantitative analysis; geostatistical and econometric analysis at the census-tract (AGEB) level.
+    - date: 2026–present
+      title: Urban revitalization in the Monterrey Metropolitan Area
+      description: Center for the Future of Cities, Tecnológico de Monterrey; municipalities of Monterrey, Apodaca, and San Nicolás de los Garza
+      details:
+        - Analysis of the likelihood of successful revitalization, particularly in areas with access to mass transit.
+    - date: 2025–present
+      title: "Resilient Coasts: A multi-disciplinary framework for assessing and mitigating coastal vulnerability in Mexico"
+      description: Challenge-Based Research program, Tecnológico de Monterrey (PI H. Barrios)
+      details:
+        - Population exposure analysis (Guaymas case study).
+    - date: 2024–present
+      title: "MexPop: multi-temporal population grids for Mexico (1990–2020)"
+      description: Center for the Future of Cities, Tecnológico de Monterrey, with R. Figueroa-Soriano; in collaboration with R. Prieto-Curiel (Complexity Science Hub, Vienna)
+      details:
+        - Population grids for 69 metropolitan areas, the basis of the *Nature Communications* study on population loss in urban centres.
+    - date: 2025–present
+      title: Metropolitan scenario planning for Monterrey
+      description: Center for the Future of Cities, Tecnológico de Monterrey, and Consejo Nuevo León, with City Explained (CommunityViz)
+      details:
+        - Technical team; evaluated scenario-planning tools (CommunityViz, SILO) and prepared data for land-suitability and development scenarios.
+        - Participatory workshops with state and municipal officials, business chambers, and experts.
+    - date: 2022–present
+      title: Agent-based transportation microsimulation for the Monterrey Metropolitan Area (TASHA/GTAModel, SOFIAA)
+      description: Tec Challenge-Based Research grant (2022, PI R. Ponce-Lopez) with the University of Toronto Transportation Research Institute and Consejo Nuevo León; continued with RTI International (USAID Net Zero Cities)
+      details:
+        - Synthetic population and origin–destination tables for travel-demand modeling.
+    - date: 2025
+      title: Publication on Amazonian cities (accessibility and remoteness)
+      description: Inter-American Development Bank, Housing and Urban Development Division (technical consultant)
+    - date: 2024–2025
+      title: Identification and characterization of urban settlements in the Amazon region
+      description: Inter-American Development Bank, Housing and Urban Development Division (consultant)
+      details:
+        - GIS analysis to map human settlements in the Amazon region.
+        - Network metrics and accessibility analysis.
+    - date: 2024
+      title: Sistema de apoyo a la evaluación de proyectos de construcción residencial urbana
+      description: Consultancy for the Municipality of San Pedro Garza García (Secretaría de Desarrollo Urbano); project lead
+    - date: 2021–2024
+      title: Sistema de Información Urbano Metropolitano (SIUM) de Monterrey
+      description: School of Government and Public Transformation and Center for the Future of Cities, Tecnológico de Monterrey; funded by Fundación FEMSA
+      details:
+        - Open web platform on three decades of urban expansion in Monterrey, launched in April 2024.
+    - date: 2022–2023
+      title: Urban heat island assessment for resilient and sustainable planning
+      description: Inter-American Development Bank, Housing and Urban Development Division (algorithm developer)
+      details:
+        - Interactive dashboard for urban heat island assessment in Latin America.
+        - Evaluation of mitigation strategies for urban heat islands.
+    - date: 2021–2022
+      title: Urban modeling algorithms for resilient and sustainable planning
+      description: Inter-American Development Bank, Housing and Urban Development Division (algorithm developer)
+      details:
+        - Interactive dashboard of urban growth in Latin America.
+        - Urban growth simulator for scenario planning to 2050.
+
+  teaching:
+    - date: 2026
+      title: Probabilidad y estadística (AP6001)
+      description: Doctorado en Política Pública, School of Government and Public Transformation, Tecnológico de Monterrey
+    - date: 2025–2026
+      title: Ciencia de datos para políticas públicas (TC4036)
+      description: Master in Public Policy, School of Government and Public Transformation, Tecnológico de Monterrey
+    - date: 2023–2025
+      title: Ciencia de datos (TC4025)
+      description: Graduate course (including the Maestría en Economía Aplicada), School of Government and Public Transformation, Tecnológico de Monterrey
+    - date: 2026
+      title: "Course design: Maestría en Planeación Urbana"
+      description: School of Government and Public Transformation, Tecnológico de Monterrey
+      details:
+        - Course plans for Ciencia de datos urbanos y geográficos, Ciencia geoespacial para ciudades, Análisis espacial avanzado, and Simulación y modelado de ciudades.
+    - date: 2025
+      title: "Course design: Futuros urbanos: datos, diseño y política pública"
+      description: General education course, Tecnológico de Monterrey
+      details:
+        - With R. Ponce-Lopez and E. Resendiz.
+    - date: 2021–2022
+      title: Professional training for public agencies (remote), Tecnológico de Monterrey
+      details:
+        - "*Diseño de soluciones colaborativas a problemáticas territoriales*, Instituto Nacional Electoral, 2022: blocks on territorial projects and urban land classification with Google Earth Engine."
+        - Diplomado modules on big data and on storing and querying structured and unstructured data, 2021.
+        - Courses for the state financial intelligence units of Chiapas and Baja California Sur (UIPE).
+    - date: 2021
+      title: Instructor, Master in Data Science & AI
+      description: Dev.F (online bootcamp)
+      details:
+        - Contributed to the design of the program's curriculum.
+    - date: 2017–2021
+      title: Undergraduate courses, taught in English
+      description: Universidad Politécnica de Yucatán
+      details:
+        - Programming; probability and statistics; differential, integral, and multivariate calculus; statistical models; unsupervised learning; machine learning.
+    - date: 2016
+      title: Física e introducción a la fisicoquímica; Temas de matemáticas (undergraduate)
+      description: Facultad de Química, Universidad Autónoma de Yucatán
+
+  supervision:
+    - date: 2026
+      title: "Thesis advisor: Andrea Salinas Blancas"
+      description: Maestría en Ciencia de Datos y Políticas Públicas, Tecnológico de Monterrey
+      details:
+        - "*Identificación de zonas para la instalación de sistemas de captación de agua de lluvia en el estado de Oaxaca mediante técnicas de aprendizaje no supervisado y análisis geoespacial*"
+    - date: 2026
+      title: "Thesis advisor: Christian Amado Láscarez Salas"
+      description: Tecnológico de Monterrey
+      details:
+        - "*Industrialización y salud mental: evidencia causal del impacto de nuevas plantas manufactureras en la tasa de suicidios municipal en México*"
+    - date: 2026
+      title: "Applied policy report advisor: Andrea Victoria Vásquez Cantero"
+      description: Master in Public Policy, Tecnológico de Monterrey
+      details:
+        - "*Hacia un modelo de vivienda asequible en la Ciudad de México*"
+    - date: 2025–present
+      title: "Doctoral committee member: Mónica Belén Hernández-Bennettz"
+      description: Doctorado en Política Pública, Tecnológico de Monterrey
+    - date: 2024–2026
+      title: Thesis examiner
+      details:
+        - Antonio Sebastián Villarreal, Doctorado en Política Pública, Tecnológico de Monterrey (defense scheduled for November 2026).
+        - Cristian Peña Cárdenas, predoctoral exam, Doctorado Interinstitucional en Ciencias del Hábitat (UADY–UASLP), 2026.
+        - Ricardo Soriano Garibay, Maestría en Ciencia de Datos y Políticas Públicas, Tecnológico de Monterrey, 2026.
+        - Alberto Heredia, Maestría en Economía Aplicada, Tecnológico de Monterrey, 2025.
+        - Guillermo Pérez Vallet, Maestría en Prospectiva Estratégica, Tecnológico de Monterrey, 2024.
+        - Luis Enrique Cano Palafox, Maestría en Prospectiva Estratégica, Tecnológico de Monterrey, 2024.
+    - date: 2025–2026
+      title: Faculty mentor, thesis bootcamp (Bootcamp de Titulación)
+      description: Maestría en Ciencia de Datos y Políticas Públicas, Tecnológico de Monterrey
+    - date: 2024
+      title: Capstone project advisor (Proyecto Integrador), master's students
+      description: Center for the Future of Cities, Tecnológico de Monterrey
+    - date: 2022–2024
+      title: Internship supervisor, Data Engineering students
+      description: Universidad Politécnica de Yucatán
+      details:
+        - Alexa Canché and Guillermo Montes de Oca (2022); Hugo Demian Zúñiga Medina (2024).
+
+  talks:
+    # TODO: fill in the ICUH title (Oxford Abstracts program, session 246960, 16 Oct 2026).
+    - date: 2026
+      title: "Keynote: Reescalamiento y pérdida de población en centros urbanos de México"
+      description: 6.º Congreso Internacional de Estudios sobre la Ciudad (PUEC, UNAM)
+      location: Mérida, Mexico
+    - date: 2026
+      title: "[Talk title]"
+      description: 22nd International Conference on Urban Health (ICUH), International Society for Urban Health
+      location: Mexico City, Mexico
+    - date: 2026
+      title: Developing and validating spatial indicators of cycling access and connectivity across diverse urban contexts globally
+      description: International Society for Physical Activity and Health (ISPAH) Congress 2026
+      location: Mérida, Mexico
+      details:
+        - Co-author; with M. Abdollahyar, C. Higgs, A. Jafari, and the GOHSC cycling working group.
+    - date: 2026
+      title: "Urban scaling and population drift: The case of Mexico"
+      description: "CS2Italy: Italian Conference on Computational Social Science"
+      location: Turin, Italy
+    - date: 2026
+      title: "Poster: A preference-based urban expansion simulator for housing and employment growth: Methods and case study in the Monterrey Metropolitan Area, Mexico"
+      description: "CS2Italy: Italian Conference on Computational Social Science"
+      location: Turin, Italy
+      details:
+        - With N. Cadavid-Aguilar, S. Gutiérrez-Bernal, and U. Salazar De Urquidi.
+    - date: 2025
+      title: "Assessing cell phone data for home–work mobility analysis: Evidence from the Mexico City Metropolitan Area"
+      description: International Conference on Computational Urban Planning and Urban Management (CUPUM)
+      location: London, UK
+      details:
+        - With N. Cadavid-Aguilar and R. Ponce-Lopez; presented by R. Figueroa-Soriano.
+    - date: 2025
+      title: "Building a multi-temporal urban population grid for Mexico: The why and the how"
+      description: International Conference on Computational Urban Planning and Urban Management (CUPUM)
+      location: London, UK
+      details:
+        - With R. Figueroa-Soriano, who presented.
+    - date: 2024
+      title: Imputing informal workers for transportation modelling in Latin America by the use of machine learning techniques
+      description: World Symposium on Transport and Land Use Research (WSTLUR)
+      location: Bogotá, Colombia
+      details:
+        - With C. Maia de Souza, A. A. Domínguez-Cristerna, R. Ponce-Lopez, and E. J. Miller.
+    - date: 2023
+      title: Interactive dashboard to characterize urban sprawl in Latin America based on SLEUTH
+      description: International Conference on Computational Urban Planning and Urban Management (CUPUM)
+      location: Montréal, Canada
+      details:
+        - With R. Ponce-Lopez, J. A. Torre, A. Vazquez Brust, M. A. Scetta, and C. Piedrafita.
+    - date: 2022
+      title: An implementation of SLEUTH as an open platform for doing scenario planning to predict urban growth
+      description: Annual Meeting of the Society for Decision Making Under Deep Uncertainty (DMDU)
+      location: Mexico City, Mexico
+      details:
+        - With R. Ponce-Lopez.
+
+  # Invited presentations outside academic conferences, and science communication.
+  outreach:
+    - date: 2026
+      title: Scaling and population loss in Mexican urban centres
+      description: Presentation of the study to researchers from El Colegio de México and UNAM, with commentary by Diane Davis (Harvard GSD); Tecnológico de Monterrey
+      location: Mexico City, Mexico
+      details:
+        - With R. Ponce-Lopez.
+    - date: 2026
+      title: Scaling and population loss in Mexican urban centers
+      description: Research Seminar, School of Government and Public Transformation, Tecnológico de Monterrey
+      location: Mexico City, Mexico
+    - date: 2025
+      title: Dinámicas de población al interior de 69 zonas metropolitanas de México con relación al modelo urbano vigente
+      description: Invited speaker, Academic Advisory Council (Consejo Consultivo Académico) of INEGI, second session of 2025
+      location: Mexico City, Mexico
+    - date: 2025
+      title: "Cuando el desarrollo separa: complejidad económica y segregación urbana en México"
+      description: Data Day Monterrey 2025, Software Guru
+      location: San Pedro Garza García, Mexico
+      details:
+        - With F. Gómez Zaldívar.
+    - date: 2025
+      title: "Cuando el desarrollo separa: complejidad económica y segregación urbana en México"
+      description: MeriData meetup
+      location: Mérida, Mexico
+    - date: 2025
+      title: "Cuando el desarrollo separa: complejidad económica y segregación urbana en México"
+      description: Engineering Week (Semana de Ingeniería), Universidad Politécnica de Yucatán
+      location: Yucatán, Mexico
+    - date: 2024
+      title: Despoblación de los centros urbanos en México
+      description: Research Seminar, School of Government and Public Transformation, Tecnológico de Monterrey
+    - date: 2024
+      title: "Sistema de Información Urbano Metropolitano: la expansión urbana de Monterrey en datos, hacia una discusión informada"
+      description: Data Day Monterrey 2024, Software Guru
+      location: San Pedro Garza García, Mexico
+    - date: 2024
+      title: "URSA, herramienta open source para la planificación urbana"
+      description: ConCiencia Social Mérida (Data-Pop Alliance), CEPHCIS-UNAM
+      location: Mérida, Mexico
+    - date: 2023
+      title: "URSA: sistema de apoyo para la planificación urbana"
+      description: Urban Open Day, Tecnológico de Monterrey
+      location: Puebla, Mexico
+    - date: 2023
+      title: Aprenda a implementar la herramienta de código abierto Predicción de Crecimiento Urbano
+      description: Code for Development workshop, Inter-American Development Bank (online)
+      details:
+        - Co-presenter.
+    - date: 2023
+      title: Presentation of the URSA interactive dashboard
+      description: Tec Science Summit, cities track, Tecnológico de Monterrey
+      details:
+        - With R. Ponce-Lopez.
+    - date: 2022
+      title: pySleuth
+      description: Workshop of Tecnológico de Monterrey and the University of Toronto Transportation Research Institute (online)
+    - date: 2021
+      title: Calificación automática con Jupyter, Nbgrader y GitHub Classroom
+      description: 1.er Congreso de Innovación en la Práctica y Enseñanza de las Disciplinas Científicas, Sociales y Humanas, Colegio de Bachilleres del Estado de Yucatán
+      details:
+        - With D. Gamboa Angulo.
+    - date: 2019
+      title: Forest fire prediction in Yucatán
+      description: National Meeting of the Intel Innovation Labs Network (Red de Laboratorios de Innovación Intel)
+      location: Mérida, Mexico
+
+  service:
+    - date: 2026
+      title: Proposal evaluator, Strategic Research Projects 2026–2028
+      description: University of California Alianza MX
+    - date: 2026
+      title: Admissions committee, Maestría en Ciencia de Datos y Políticas Públicas
+      description: Tecnológico de Monterrey
+    - date: 2022–2026
+      title: Hiring and interview panels (fellows, postdoctoral researchers, staff)
+      description: Institute for the Future of Education and Center for the Future of Cities, Tecnológico de Monterrey
+    - date: 2025
+      title: "Reviewer: *Environment and Planning B: Urban Analytics and City Science*"
+    - date: 2025
+      title: Program committee and reviewer, DISE track
+      description: Symposium on Information Management and Big Data (SIMBig 2025)
+    - date: 2025
+      title: Peer evaluator, Comités de Pares Académicos
+      description: SECIHTI, Estancias Posdoctorales por México 2025
+    - date: 2025–present
+      title: Member, Global Observatory of Healthy and Sustainable Cities (GOHSC)
+      description: Software working group (1000 Cities Challenge); Global Cycling Indicators project
+
+  awards:
+    - date: 2023–present
+      title: National Researcher, Level I
+      description: National System of Researchers (SNII), Secihti, Mexico
+    - date: 2015
+      title: Doctoral Fellowship
+      description: National Council of Science and Technology (CONACyT), Mexico
+    - date: 2010
+      title: Cum Laude Distinction
+      description: Universidad Autónoma de Yucatán
+    - date: 2010
+      title: International Mobility Scholarship
+      description: Universidad Autónoma de Yucatán and Universidad Autónoma de Madrid
+      location: Madrid, Spain
+
+  training:
+    - date: 2023
+      title: Summer University on Effective High-Performance Computing and Data Analytics
+      description: Swiss National Supercomputing Centre (CSCS) and Università della Svizzera italiana (USI)
+      location: Lugano, Switzerland
+    - date: 2019
+      title: Project Management Certification, IPMA Level D
+      description: International Project Management Association
+    - date: 2018
+      title: Teaching by professional competencies and competency assessment (workshop)
+      description: Universidad Politécnica de Yucatán
+      location: Yucatán, Mexico
+    - date: 2014
+      title: IV Summer School on Statistical Physics of Complex and Small Systems
+      description: Instituto de Física Interdisciplinar y Sistemas Complejos (IFISC)
+      location: Palma de Mallorca, Spain
+
+  # Research code and data sets.
+  software:
+    - date: 2026
+      title: "Code and data for *Scaling and population loss in Mexican urban centres*"
+      description: "Multi-temporal population grid for Mexico and radial density functions. [doi:10.5281/zenodo.20630381](https://doi.org/10.5281/zenodo.20630381) · [GitHub](https://github.com/CentroFuturoCiudades/scaling_depopulation_mex)"
+    - date: 2026
+      title: "[mxcensus](https://github.com/CentroFuturoCiudades/mxcensus)"
+      description: Mirror of Mexican census files with optional preprocessing and harmonization (Python).
+    - date: 2022–2024
+      title: "[URSA](https://github.com/EL-BID/URSA)"
+      description: Open-source tool to guide urban planning with satellite data, Inter-American Development Bank (co-developer).
+    - date: 2024
+      title: "[ghsldownloader](https://github.com/CentroFuturoCiudades/ghsldownloader)"
+      description: Python package with algorithms to delineate cities from Global Human Settlement Layer data.
+    - date: 2023
+      title: "[population-synthesis](https://github.com/CentroFuturoCiudades/population-synthesis)"
+      description: Open-source tool to generate synthetic populations of households and persons from aggregate census data.
+    - date: 2022
+      title: "[income-segregation](https://github.com/CentroFuturoCiudades/income-segregation)"
+      description: Code and data for estimating income segregation from census and survey data with iterative proportional fitting.
+    - date: 2022
+      title: "[sleuth_python](https://github.com/gperaza/sleuth_python)"
+      description: Python implementation of the SLEUTH urban growth model.
+
+  # Press coverage, video, and writing for general audiences.
+  media:
+    - date: 2026
+      title: Press coverage of *Scaling and population loss in Mexican urban centres*
+      details:
+        - "Interviewed in “[Mexican cities are expanding towards the periphery, but its centers are increasingly empty](https://tecscience.tec.mx/en/cities-and-prosperous-communities/mexican-cities/),” *TecScience*, August 2026 ([Spanish](https://tecscience.tec.mx/es/ciudades-y-comunidades-prosperas/ciudades-mexicanas/))."
+        - "Reported by [UDG TV](https://udgtv.com/noticias/guadalajara-perdio-240-mil-habitantes-de-su-centro-historico/328716), [NTR Guadalajara](https://www.ntrguadalajara.com/post.php?id_nota=248722), and [Libera Radio](https://liberaradio.com/hermosillo-perdio-22-de-la-poblacion-de-su-zona-centro-en-30-anos/), August 2026."
+    - date: 2026
+      title: "[Gonzalo Peraza – Centro para el Futuro de las Ciudades](https://www.youtube.com/watch?v=s4V4kScbgrw)"
+      description: Video profile, School of Government and Public Transformation, Tecnológico de Monterrey
+    - date: 2026
+      title: "[Extreme heat doesn't impact every city equally. This index shows where it is most dangerous](https://tecscience.tec.mx/en/cities-and-prosperous-communities/index-cities-heat/)"
+      description: "*TecScience*, April 2026; interviewed on the Global Urban Heat Vulnerability Index"
+    - date: 2024
+      title: "[Una herramienta que transforma la movilidad](https://tecscience.tec.mx/es/tecnologia/una-herramienta-que-transforma-la-movilidad/)"
+      description: "*TecScience*, Tecnológico de Monterrey"
+      details:
+        - Feature on a mobility simulation tool for Monterrey; credited, with A. Romero, for key implementation work.
+    - date: 2024
+      title: "[Hacia el modelo de ciudad que queremos: Sistema de Información Urbano Metropolitano de Monterrey](https://egobiernoytp.tec.mx/es/blog/hacia-el-modelo-de-ciudad-que-queremos-sium)"
+      description: Blog post with R. Ponce-Lopez, School of Government and Public Transformation, Tecnológico de Monterrey
