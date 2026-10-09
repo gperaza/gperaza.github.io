@@ -19,9 +19,9 @@ about:
       href: "https://github.com/gperaza"
     - text: ORCID
       href: "https://orcid.org/0000-0002-0871-2884"
-    - icon: rss
-      text: Blog
-      href: blog.qmd
+    - icon: person-vcard
+      text: Save contact
+      href: assets/gonzalo-peraza.vcf
 ---
 
 I am a Research Professor at Tecnológico de Monterrey, affiliated with the [Center for the Future of Cities](https://futurociudades.tec.mx/es/semblanza/gonzalo-gaudencio-peraza) and the [School of Government and Public Transformation](https://egobiernoytp.tec.mx/es/sobre-egob/facultad-investigadores/perfil-asociados/gonzalo-peraza).

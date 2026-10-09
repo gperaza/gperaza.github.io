@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Peraza Mues;Gonzalo;G.;;
+FN:Gonzalo G. Peraza Mues
+ORG:Tecnológico de Monterrey;Center for the Future of Cities
+TITLE:Research Professor
+EMAIL;TYPE=INTERNET,WORK:gonzalo.peraza@tec.mx
+item1.URL:https://gonzalo-peraza.com
+item1.X-ABLabel:Website
+item2.URL:https://orcid.org/0000-0002-0871-2884
+item2.X-ABLabel:ORCID
+item3.URL:https://scholar.google.com/citations?user=nguMmzcAAAAJ
+item3.X-ABLabel:Google Scholar
+NOTE:Urban Scientist · Research Professor. Center for the Future of Cities and School of Government and Public Transformation\, Tecnológico de Monterrey.
+END:VCARD

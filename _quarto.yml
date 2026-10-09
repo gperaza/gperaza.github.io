@@ -5,6 +5,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/gonzalo-peraza.vcf   # contact card behind the home page's "Save contact" button
 
 website:
   title: "Gonzalo Peraza"
