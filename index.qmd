@@ -37,6 +37,8 @@ You can read more about my [research](research.qmd), browse my [publications](pu
 ::: {.news}
 [Recent news]{.news-title}
 
+- **Nov 2026**\
+  Talk on scaling and population loss in Mexican urban centres at the Second Mexico City Urban Economics Workshop, Banco de México.
 - **Oct 2026**\
   Keynote at the [6th Congreso Internacional de Estudios sobre la Ciudad](https://6congresociudad.puec.unam.mx/pdf/programa.pdf) (PUEC-UNAM), Mérida.
 - **Jul 2026**\

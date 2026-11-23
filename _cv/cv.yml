@@ -181,13 +181,15 @@ cv:
       description: Master in Public Policy, Tecnológico de Monterrey
       details:
         - "*Hacia un modelo de vivienda asequible en la Ciudad de México*"
-    - date: 2025–present
+    - date: 2025–2026
       title: "Doctoral committee member: Mónica Belén Hernández-Bennettz"
       description: Doctorado en Política Pública, Tecnológico de Monterrey
+      details:
+        - Thesis examiner at the doctoral defense, November 2026.
     - date: 2024–2026
       title: Thesis examiner
       details:
-        - Antonio Sebastián Villarreal, Doctorado en Política Pública, Tecnológico de Monterrey (defense scheduled for November 2026).
+        - Antonio Sebastián Villarreal, Doctorado en Política Pública, Tecnológico de Monterrey, 2026.
         - Cristian Peña Cárdenas, predoctoral exam, Doctorado Interinstitucional en Ciencias del Hábitat (UADY–UASLP), 2026.
         - Ricardo Soriano Garibay, Maestría en Ciencia de Datos y Políticas Públicas, Tecnológico de Monterrey, 2026.
         - Alberto Heredia, Maestría en Economía Aplicada, Tecnológico de Monterrey, 2025.
@@ -207,6 +209,10 @@ cv:
 
   talks:
     # TODO: fill in the ICUH title (Oxford Abstracts program, session 246960, 16 Oct 2026).
+    - date: 2026
+      title: Scaling and population loss in Mexican urban centres
+      description: Second Mexico City Urban Economics Workshop, Banco de México
+      location: Mexico City, Mexico
     - date: 2026
       title: "Keynote: Reescalamiento y pérdida de población en centros urbanos de México"
       description: 6.º Congreso Internacional de Estudios sobre la Ciudad (PUEC, UNAM)
